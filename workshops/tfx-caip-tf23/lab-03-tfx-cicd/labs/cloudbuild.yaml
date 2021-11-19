@@ -42,7 +42,7 @@ steps:
   - 'USE_KFP_SA=$_USE_KFP_SA'
   - 'ENABLE_TUNING=$_ENABLE_TUNING'
   dir: $_PIPELINE_FOLDER
-
+timeout: 20m
 
 # Push the custom image to Container Registry 
 images: ['gcr.io/$PROJECT_ID/$_TFX_IMAGE_NAME:$TAG_NAME']
